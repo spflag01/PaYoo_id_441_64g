@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:ziaul_64g_441/auth/register_page.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -151,7 +152,15 @@ class _HomepageState extends State<Homepage> {
                         SizedBox(height: 10),
 
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                 context,
+                               MaterialPageRoute(
+                        builder: (context) => const RegisterPage(),
+                         ),
+                          );
+                          },
+                          
                           child: Text("Create New Account"),
                         ),
 
