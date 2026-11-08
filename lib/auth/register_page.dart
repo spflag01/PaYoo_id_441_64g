@@ -48,6 +48,9 @@ class _RegisterPageState extends State<RegisterPage> {
           .signUp(
             email: email,
             password: password,
+            data: {
+              'name':nameController.text.trim(),
+            }
           )
           .timeout(const Duration(seconds: 20));
 
