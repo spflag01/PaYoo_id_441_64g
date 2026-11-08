@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:ziaul_64g_441/homepage.dart';
+
+import 'package:ziaul_64g_441/auth/Login_page.dart';
+import 'package:ziaul_64g_441/auth/auth_gate.dart';
 
 void main() async{
 
@@ -18,6 +20,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false,home:Homepage() );
+    return MaterialApp(debugShowCheckedModeBanner: false,home:AuthGate() );
   }
 }

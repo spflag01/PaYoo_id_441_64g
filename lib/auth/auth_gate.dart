@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
+import 'package:ziaul_64g_441/auth/Login_page.dart';
 import 'package:ziaul_64g_441/homepage.dart';
 
 
@@ -16,10 +18,10 @@ class AuthGate extends StatelessWidget {
             Supabase.instance.client.auth.currentSession;
 
         if (session != null) {
-          return const Homepage(); // Your actual logged-in home
+          return  Homepage(); // Your actual logged-in home
         }
 
-        return const Homepage(); // Your login UI
+        return  LoginPage(); // Your login UI
       },
     );
   }
